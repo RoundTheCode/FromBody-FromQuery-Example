@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "4444574e-2490-4691-ab09-976bee38e74e",
+		"name": "A FromBody and FromQuery example in ASP.NET Core Web API",
+		"description": "An ASP.NET Core example of using the FromBody and FromQuery attribute. Handy if your request is null, or getting a 415 error.\r\n\r\nDownload the ASP.NET Core example at:\r\nhttps://www.roundthecode.com/asp-net-core-examples/a-frombody-and-fromquery-example-in-asp-net-core-web-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "HTTP GET request to WebController",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7000/web?firstname=David&surname=Grace",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"web"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "David"
+						},
+						{
+							"key": "surname",
+							"value": "Grace"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTTP POST request to WebController",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"david\",\r\n    \"surname\": \"grace\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7000/web",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"web"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTTP GET request to WebApiController",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7000/webapi?firstname=David&surname=Grace",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"webapi"
+					],
+					"query": [
+						{
+							"key": "firstname",
+							"value": "David"
+						},
+						{
+							"key": "surname",
+							"value": "Grace"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HTTP POST request to WebApiController",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstname\": \"david\",\r\n    \"surname\": \"grace\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7000/webapi",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"webapi"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
