@@ -1,3 +1,3 @@
 # Documentation
 
-Full documentation is available at https://www.roundthecode.com/dotnet-samples/a-frombody-and-fromquery-sample-in-asp-net-core-web-api
+Full documentation is available at https://www.roundthecode.com/dotnet-code-examples/a-frombody-and-fromquery-example-in-asp-net-core-web-api
